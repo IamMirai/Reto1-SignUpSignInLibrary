@@ -34,5 +34,10 @@ public class Package {
         this.message = message;
     }
     
+    public void getDatos(User user, MessageEnum message) {
+        this.user = user;
+        this.message = message;
+    }
+    
     
 }
