@@ -5,6 +5,6 @@ package datatransferobject;
  * Interface of the model. It specifies the behavior of the model implementations.
  */
 public interface Model {
-    public Package doSignIn(User user);
-    public Package doSignUp(User user); 
+    public User doSignIn(User user);
+    public User doSignUp(User user); 
 }
