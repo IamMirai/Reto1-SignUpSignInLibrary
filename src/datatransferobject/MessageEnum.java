@@ -11,5 +11,6 @@ public enum MessageEnum {
     AN_OK,
     AN_INVALIDUSER,
     AN_USEREXIST,
-    AN_ERROR
+    AN_CONNECTIONERROR,
+    AN_MAXCONNECTION
 }
