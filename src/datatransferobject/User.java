@@ -9,6 +9,7 @@ import java.sql.Timestamp;
  * Class that saves the information about on User.
  */
 public class User implements Serializable {
+
      private String login;
      private String email;
      private String fullName;
@@ -30,6 +31,7 @@ public class User implements Serializable {
         this.password = password;
         this.lastPasswordChange = lastPasswordChange;
     }
+
 
     public String getLogin() {
         return login;
