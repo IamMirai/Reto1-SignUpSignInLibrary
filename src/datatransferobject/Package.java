@@ -1,11 +1,13 @@
 package datatransferobject;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Julen
  * Class that contains the User that sign up or sign in and the MessageEnum.
  */
-public class Package {
+public class Package implements Serializable {
     
     private User user;
     private MessageEnum message;
