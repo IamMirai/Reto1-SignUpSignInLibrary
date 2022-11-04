@@ -10,6 +10,6 @@ import exceptions.UserExistException;
  * Interface of the model. It specifies the behavior of the model implementations.
  */
 public interface Model {
-    public User doSignIn(User user) throws InvalidUserException, TimeOutException, MaxConnectionExceededException;
-    public void doSignUp(User user) throws UserExistException, TimeOutException, MaxConnectionExceededException; 
+    public User doSignIn(User user) throws InvalidUserException, ConnectionErrorException, TimeOutException, MaxConnectionExceededException;
+    public void doSignUp(User user) throws UserExistException, ConnectionErrorException, TimeOutException, MaxConnectionExceededException; 
 }
