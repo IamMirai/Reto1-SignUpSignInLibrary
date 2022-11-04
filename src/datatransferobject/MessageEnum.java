@@ -1,5 +1,7 @@
 package datatransferobject;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Julen

@@ -1,5 +1,6 @@
 package datatransferobject;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
@@ -7,9 +8,7 @@ import java.sql.Timestamp;
  * @author Julen
  * Class that saves the information about on User.
  */
-public class User {
-    
-     private Integer id;
+public class User implements Serializable {
      private String login;
      private String email;
      private String fullName;
@@ -22,8 +21,7 @@ public class User {
     }
      
      
-     public User(Integer id, String login, String email, String fullName, UserStatus status, UserPrivilege privilege, String password, Timestamp lastPasswordChange) {
-        this.id = id;
+     public User(String login, String email, String fullName, UserStatus status, UserPrivilege privilege, String password, Timestamp lastPasswordChange) {
         this.login = login;
         this.email = email;
         this.fullName = fullName;
@@ -31,14 +29,6 @@ public class User {
         this.privilege = privilege;
         this.password = password;
         this.lastPasswordChange = lastPasswordChange;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getLogin() {
