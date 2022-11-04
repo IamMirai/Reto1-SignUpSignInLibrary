@@ -56,7 +56,7 @@ public class UserTest {
         int myDay = 24;
         Timestamp ts = Timestamp.valueOf(String.format("%04d-%02d-%02d 00:00:00",myYear, myMonth, myDay));
 
-        User user = new User(1, "a", "example@gmail.com", "a", UserStatus.ENABLED, UserPrivilege.USER, "abcd*1234", ts);
+        User user = new User( "a", "example@gmail.com", "a", UserStatus.ENABLED, UserPrivilege.USER, "abcd*1234", ts);
         assertTrue(user instanceof User);
     }
 
