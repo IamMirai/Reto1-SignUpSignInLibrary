@@ -12,5 +12,5 @@ import exceptions.UserExistException;
  */
 public interface Model {
     public User doSignIn(User user) throws InvalidUserException, ConnectionErrorException, TimeOutException, MaxConnectionExceededException;
-    public User doSignUp(User user) throws UserExistException, ConnectionErrorException, TimeOutException, MaxConnectionExceededException; 
+    public void doSignUp(User user) throws UserExistException, ConnectionErrorException, TimeOutException, MaxConnectionExceededException; 
 }
