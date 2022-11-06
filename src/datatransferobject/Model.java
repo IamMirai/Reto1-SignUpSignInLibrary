@@ -1,5 +1,6 @@
 package datatransferobject;
 
+import exceptions.ConnectionErrorException;
 import exceptions.InvalidUserException;
 import exceptions.MaxConnectionExceededException;
 import exceptions.TimeOutException;
