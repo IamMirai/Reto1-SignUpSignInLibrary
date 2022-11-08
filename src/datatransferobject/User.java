@@ -5,24 +5,23 @@ import java.sql.Timestamp;
 
 /**
  *
- * @author Julen
- * Class that saves the information about on User.
+ * @author Julen Class that saves the information about on User.
  */
 public class User implements Serializable {
 
-     private String login;
-     private String email;
-     private String fullName;
-     private UserStatus status;
-     private UserPrivilege privilege;
-     private String password;
-     private Timestamp lastPasswordChange;
-     
-     public User() {
+    private Integer id;
+    private String login;
+    private String email;
+    private String fullName;
+    private UserStatus status;
+    private UserPrivilege privilege;
+    private String password;
+    private Timestamp lastPasswordChange;
+
+    public User() {
     }
-     
-     
-     public User(String login, String email, String fullName, UserStatus status, UserPrivilege privilege, String password, Timestamp lastPasswordChange) {
+
+    public User(String login, String email, String fullName, UserStatus status, UserPrivilege privilege, String password, Timestamp lastPasswordChange) {
         this.login = login;
         this.email = email;
         this.fullName = fullName;
@@ -32,7 +31,14 @@ public class User implements Serializable {
         this.lastPasswordChange = lastPasswordChange;
     }
 
+    public Integer getId() {
+        return id;
+    }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+    
     public String getLogin() {
         return login;
     }
