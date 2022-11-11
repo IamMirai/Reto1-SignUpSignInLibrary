@@ -5,7 +5,8 @@ import java.sql.Timestamp;
 
 /**
  *
- * @author Julen Class that saves the information about on User.
+ * @author Julen 
+ * Class that saves the information about on User.
  */
 public class User implements Serializable {
 
