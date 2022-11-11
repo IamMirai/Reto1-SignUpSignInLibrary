@@ -14,19 +14,22 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author User
+ * @author Julen and Sendoa
  */
 public class UserExistExceptionTest {
     
-    public UserExistExceptionTest() {
-    }
-    
+    /**
+     * Test to see if the message is not null
+     */
     @Test
     public void testNotNullMessage() {
         UserExistException error = new UserExistException("Error");
         assertNotNull(error.getMessage());
     }
     
+    /**
+     * Test the creation of the message
+     */
     @Test
     public void testMessage(){
         UserExistException error = new UserExistException("Error");

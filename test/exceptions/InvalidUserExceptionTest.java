@@ -14,19 +14,22 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author User
+ * @author Julen and Sendoa
  */
 public class InvalidUserExceptionTest {
     
-    public InvalidUserExceptionTest() {
-    }
-    
+    /**
+     * Test to see if the message is not null
+     */
     @Test
     public void testNotNullMessage() {
         InvalidUserException error = new InvalidUserException("Error");
         assertNotNull(error.getMessage());
     }
     
+    /**
+     * Test the creation of the message
+     */
     @Test
     public void testMessage(){
         InvalidUserException error = new InvalidUserException("Error");

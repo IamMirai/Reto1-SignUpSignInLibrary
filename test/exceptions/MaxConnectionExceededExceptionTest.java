@@ -14,19 +14,22 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author User
+ * @author Julen and Sendoa
  */
 public class MaxConnectionExceededExceptionTest {
-    
-    public MaxConnectionExceededExceptionTest() {
-    }
    
+    /**
+     * Test to see if the message is not null
+     */
     @Test
     public void testNotNullMessage() {
         MaxConnectionExceededException error = new MaxConnectionExceededException("Error");
         assertNotNull(error.getMessage());
     }
     
+    /**
+     * Test the creation of the message
+     */
     @Test
     public void testMessage(){
         MaxConnectionExceededException error = new MaxConnectionExceededException("Error");
