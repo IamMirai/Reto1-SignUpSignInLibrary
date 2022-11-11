@@ -18,37 +18,23 @@ import org.junit.Test;
 
 /**
  *
- * @author 2dam
+ * @author Julen and Sendoa
  */
 public class UserTest {
-
-    public UserTest() {
-    }
-
-    @BeforeClass
-    public static void setUpClass() {
-    }
-
-    @AfterClass
-    public static void tearDownClass() {
-    }
-
-    @Before
-    public void setUp() {
-
-    }
-
-    @After
-    public void tearDown() {
-    }
-
+    
+    /**
+     * Test for creating an empty user
+     */
     @Test
     public void CreateUserTest() {
         User user = new User();
         assertTrue(user instanceof User);
     }
 
-   @Test
+    /**
+     * Test for creating a user with parameters
+     */
+    @Test
     public void CreateUserWithParamsTest() {
 
         int myYear = 2014;

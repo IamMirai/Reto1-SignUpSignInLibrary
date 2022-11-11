@@ -14,19 +14,22 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author User
+ * @author Julen and Sendoa
  */
 public class InvalidEmailValueExceptionTest {
-    
-    public InvalidEmailValueExceptionTest() {
-    }
 
+    /**
+     * Test to see if the message is not null
+     */
     @Test
     public void testNotNullMessage() {
         InvalidEmailValueException error = new InvalidEmailValueException("Error");
         assertNotNull(error.getMessage());
     }
     
+    /**
+     * Test the creation of the message
+     */
     @Test
     public void testMessage(){
         InvalidEmailValueException error = new InvalidEmailValueException("Error");

@@ -14,19 +14,22 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author User
+ * @author Julen and Sendoa
  */
 public class InvalidPasswordValueExceptionTest {
     
-    public InvalidPasswordValueExceptionTest() {
-    }
-    
+    /**
+     * Test to see if the message is not null
+     */
     @Test
     public void testNotNullMessage() {
         InvalidPasswordValueException error = new InvalidPasswordValueException("Error");
         assertNotNull(error.getMessage());
     }
     
+    /**
+     * Test the creation of the message
+     */
     @Test
     public void testMessage(){
         InvalidPasswordValueException error = new InvalidPasswordValueException("Error");

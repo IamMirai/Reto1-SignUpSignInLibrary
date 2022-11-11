@@ -18,29 +18,13 @@ import org.junit.Test;
 
 /**
  *
- * @author 2dam
+ * @author Julen and Sendoa
  */
 public class PackageTest {
-    
-    public PackageTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
+    /**
+     * Test for creating empty packages
+     */
     @Test
     public void CreatePackageTest(){
         Package p = new Package();
@@ -48,6 +32,9 @@ public class PackageTest {
         
     }
     
+    /**
+     * Test for creating packages with parameters
+     */
     @Test
     public void CreatePackageWithParamsTest(){
         User user = new User();

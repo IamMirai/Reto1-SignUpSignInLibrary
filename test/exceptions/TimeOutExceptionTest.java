@@ -14,19 +14,22 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author User
+ * @author Julen and Sendoa
  */
 public class TimeOutExceptionTest {
-    
-    public TimeOutExceptionTest() {
-    }
 
+    /**
+     * Test to see if the message is not null
+     */
     @Test
     public void testNotNullMessage() {
         TimeOutException error = new TimeOutException("Error");
         assertNotNull(error.getMessage());
     }
     
+    /**
+     * Test the creation of the message
+     */
     @Test
     public void testMessage(){
         TimeOutException error = new TimeOutException("Error");
