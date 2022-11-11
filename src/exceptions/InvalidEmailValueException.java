@@ -1,7 +1,7 @@
 package exceptions;
 
 /**
- * @author Sendoa & Haizea
+ * @author Sendoa and Haizea
  * Exception that is thrown when the email format is not correct
  */
 public class InvalidEmailValueException extends Exception {

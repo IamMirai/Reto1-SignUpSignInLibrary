@@ -1,7 +1,7 @@
 package exceptions;
 
 /**
- * @author Sendoa & Haizea
+ * @author Sendoa and Haizea
  * Exception that is thrown when the connections with the server side are exceeded
  */
 public class MaxConnectionExceededException extends Exception {

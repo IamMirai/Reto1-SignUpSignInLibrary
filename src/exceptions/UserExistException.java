@@ -1,7 +1,7 @@
 package exceptions;
 
 /**
- * @author Haizea & Sendoa
+ * @author Haizea and Sendoa
  * Exception that is thrown when the User introduced in SignUp alredy exist
  */
 public class UserExistException extends Exception {

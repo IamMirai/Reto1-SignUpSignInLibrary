@@ -1,7 +1,7 @@
 package exceptions;
 
 /**
- * @author Sendoa & Haizea
+ * @author Sendoa and Haizea
  * Exception that is thrown when the Client cannot connect to the Server
  */
 public class TimeOutException extends Exception {
